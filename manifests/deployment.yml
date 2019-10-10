@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: kprpgdevspaces 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kprpgdevspaces 
+    spec:
+      containers:
+        - name: kprpgdevspaces 
+          image: hpacr.azurecr.io/kprpgdevspaces 
+          ports:
+          - containerPort: 80

@@ -17,7 +17,7 @@ namespace webfrontend.Controllers
 
         public async Task<IActionResult> About()
         {
-            ViewData["Message"] = "Hello from webfrontend";
+            ViewData["Message"] = "HP Hello from webfrontend";
 
             using (var client = new System.Net.Http.HttpClient())
             {
